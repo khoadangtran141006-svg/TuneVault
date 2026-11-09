@@ -487,7 +487,7 @@ const ProfilePage = () => {
         </p>
       </div>
 
-      <div className="flex max-w-4xl flex-col items-center gap-6 rounded-xl border border-zinc-800 bg-[#121212] p-6 shadow-sm sm:flex-row sm:items-start">
+      <div className="flex max-w-4xl flex-col items-center gap-6 rounded-xl border border-zinc-800 bg-slate-100 p-6 shadow-sm dark:bg-[#121212] sm:flex-row sm:items-start">
         <div className="relative size-32 shrink-0 overflow-hidden rounded-full border border-zinc-700 bg-zinc-800 shadow-2xl">
           {userProfile.avatarUrl ? (
             <img
@@ -686,18 +686,18 @@ const ProfilePage = () => {
                         <div className="group-hover:hidden flex items-center justify-center">
                           {isCurrentSong ? (
                             isPlaying ? (
-                              <div className="flex items-end justify-center gap-[3px] h-3.5 w-5 mx-auto">
-                                <span className="w-[3px] bg-green-500 rounded-full animate-[bounce_0.8s_infinite_100ms] h-2"></span>
-                                <span className="w-[3px] bg-green-500 rounded-full animate-[bounce_0.8s_infinite_300ms] h-3.5"></span>
-                                <span className="w-[3px] bg-green-500 rounded-full animate-[bounce_0.8s_infinite_0s] h-1.5"></span>
-                                <span className="w-[3px] bg-green-500 rounded-full animate-[bounce_0.8s_infinite_200ms] h-2.5"></span>
+                              <div className="flex items-end justify-center gap-0.75 h-3.5 w-5 mx-auto">
+                                <span className="w-0.75 bg-green-500 rounded-full animate-[bounce_0.8s_infinite_100ms] h-2"></span>
+                                <span className="w-0.75 bg-green-500 rounded-full animate-[bounce_0.8s_infinite_300ms] h-3.5"></span>
+                                <span className="w-0.75 bg-green-500 rounded-full animate-[bounce_0.8s_infinite_0s] h-1.5"></span>
+                                <span className="w-0.75 bg-green-500 rounded-full animate-[bounce_0.8s_infinite_200ms] h-2.5"></span>
                               </div>
                             ) : (
-                              <div className="flex items-end justify-center gap-[3px] h-3.5 w-5 mx-auto">
-                                <span className="w-[3px] h-2 bg-green-500 rounded-full"></span>
-                                <span className="w-[3px] h-3.5 bg-green-500 rounded-full"></span>
-                                <span className="w-[3px] h-1.5 bg-green-500 rounded-full"></span>
-                                <span className="w-[3px] h-2.5 bg-green-500 rounded-full"></span>
+                              <div className="flex items-end justify-center gap-0.75 h-3.5 w-5 mx-auto">
+                                <span className="w-0.75 h-2 bg-green-500 rounded-full"></span>
+                                <span className="w-0.75 h-3.5 bg-green-500 rounded-full"></span>
+                                <span className="w-0.75 h-1.5 bg-green-500 rounded-full"></span>
+                                <span className="w-0.75 h-2.5 bg-green-500 rounded-full"></span>
                               </div>
                             )
                           ) : (
@@ -890,4 +890,3 @@ const ProfilePage = () => {
 };
 
 export default ProfilePage;
-
