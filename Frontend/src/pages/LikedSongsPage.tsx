@@ -140,7 +140,7 @@ const LikedSongsPage = () => {
 
       {/* Header Info */}
       <div className="flex items-end gap-6 mb-8">
-        <div className="w-44 h-44 shrink-0 bg-gradient-to-br from-pink-500 to-green-500 rounded-full flex items-center justify-center shadow-2xl">
+        <div className="w-44 h-44 shrink-0 bg-linear-to-br from-pink-500 to-green-500 rounded-full flex items-center justify-center shadow-2xl">
           <Heart className="size-16 fill-black text-black" />
         </div>
         <div className="flex flex-col gap-1">

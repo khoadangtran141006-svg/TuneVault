@@ -1,4 +1,4 @@
--- Users table for Rhythmix backend auth and profile
+-- Users table for TuneVault backend auth and profile
 CREATE TABLE [dbo].[Users]
 (
     [Id] UNIQUEIDENTIFIER NOT NULL PRIMARY KEY,

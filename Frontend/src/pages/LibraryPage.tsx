@@ -409,7 +409,7 @@ const LibraryPage = () => {
         onPlaylistCreated={loadPlaylists}
       />
       {isDeleteModalOpen && (
-        <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/70 p-4 backdrop-blur-sm">
+        <div className="fixed inset-0 z-100 flex items-center justify-center bg-black/70 p-4 backdrop-blur-sm">
           <div className="flex max-h-[80vh] w-full max-w-xl flex-col rounded-lg border border-zinc-800 bg-zinc-900 shadow-2xl">
             <div className="flex items-center justify-between border-b border-zinc-800 p-5">
               <div>
@@ -465,7 +465,7 @@ const LibraryPage = () => {
                       <span className={`flex size-6 shrink-0 items-center justify-center rounded border ${
                         isSelected ? "border-green-500 bg-green-500 text-black" : "border-zinc-600"
                       }`}>
-                        {isSelected && <Check className="size-4 stroke-[3]" />}
+                        {isSelected && <Check className="size-4 stroke-3" />}
                       </span>
                     </button>
                   );

@@ -189,7 +189,7 @@ const RightSideBar = ({
 
   return (
     <aside
-      className={`absolute bottom-0 right-2 top-2 z-30 hidden w-[360px] overflow-y-auto rounded-lg bg-slate-100 text-zinc-950 shadow-2xl transition-[transform,opacity] duration-300 ease-out will-change-transform dark:bg-zinc-900 dark:text-white xl:block ${
+      className={`absolute bottom-0 right-2 top-2 z-30 hidden w-90 overflow-y-auto rounded-lg bg-slate-100 text-zinc-950 shadow-2xl transition-[transform,opacity] duration-300 ease-out will-change-transform dark:bg-zinc-900 dark:text-white xl:block ${
         isOpen
           ? "translate-x-0 opacity-100"
           : "pointer-events-none translate-x-[calc(100%+1rem)] opacity-0"
@@ -344,7 +344,7 @@ const RightSideBar = ({
                       {currentTrack.title}
                     </span>
                     . Bài hát mang màu sắc hiện đại, phù hợp để nghe khi thư giãn,
-                    học tập hoặc tận hưởng không gian âm nhạc của Rhythmix.
+                    học tập hoặc tận hưởng không gian âm nhạc của TuneVault.
                   </p>
 
                   <button
@@ -414,7 +414,7 @@ const RightSideBar = ({
           )}
 
           {isPlaylistPickerOpen && currentTrack && (
-            <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/70 p-4 backdrop-blur-sm">
+            <div className="fixed inset-0 z-100 flex items-center justify-center bg-black/70 p-4 backdrop-blur-sm">
               <div className="w-full max-w-md rounded-lg border border-zinc-800 bg-zinc-900 p-5 shadow-2xl">
                 <div className="flex items-center justify-between border-b border-zinc-800 pb-3">
                   <div>

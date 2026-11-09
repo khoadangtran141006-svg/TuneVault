@@ -1,10 +1,10 @@
-# Rhythmix - 10 Chuc Nang Va So Do Pipeline
+# TuneVault - 10 Chuc Nang Va So Do Pipeline
 
-Tai lieu nay doi chieu 10 chuc nang bat buoc trong `Database/input.md` voi cac thanh phan dang co trong project Rhythmix. Du an su dung React + TypeScript o frontend, ASP.NET Core Web API, MediatR, Dapper va SQL Server o backend.
+Tai lieu nay doi chieu 10 chuc nang bat buoc trong `Database/input.md` voi cac thanh phan dang co trong project TuneVault. Du an su dung React + TypeScript o frontend, ASP.NET Core Web API, MediatR, Dapper va SQL Server o backend.
 
 ## 1. Danh sach 10 chuc nang
 
-| # | Chuc nang theo de bai | Hien thuc trong Rhythmix | API / Use case tieu bieu | Man hinh React |
+| # | Chuc nang theo de bai | Hien thuc trong TuneVault | API / Use case tieu bieu | Man hinh React |
 |---|---|---|---|---|
 | 1 | Xac thuc | Dang ky, dang nhap, dang xuat, OTP dang ky, JWT | `AuthController`, `RegisterCommand`, `LoginQuery`, `LogoutCommand` | `AuthModal` |
 | 2 | Ho so nguoi dung | Xem/sua profile, avatar, bio | `ProfileController`, `UpdateProfileCommand` | `ProfilePage` |
@@ -262,7 +262,7 @@ flowchart LR
 
 ## 16. Luu y khi dua vao bao cao
 
-- Du an chon Dapper, do do cac handler chi phu thuoc repository interface; SQL nam trong `Rhythmix.Infrastructure/Dapper`.
+- Du an chon Dapper, do do cac handler chi phu thuoc repository interface; SQL nam trong `TuneVault.Infrastructure/Dapper`.
 - Controller chi nhan request, lay JWT claim va goi MediatR; logic nghiep vu nam trong Application handler.
 - Chuc nang 8 va 9 lien ket voi nhau: share thanh cong tao record chia se, luu notification va push SignalR.
 - AI Recommendation la chuc nang bo sung: `AIController` goi query recommendation, doc history/favorite/catalog, sau do tra lai media ton tai trong CSDL.

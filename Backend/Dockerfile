@@ -5,20 +5,20 @@ FROM mcr.microsoft.com/dotnet/sdk:10.0 AS build
 WORKDIR /src
 
 # Copy solution + csproj files first for better layer caching
-COPY Rhythmix.sln ./
-COPY Rhythmix.API/Rhythmix.API.csproj Rhythmix.API/
-COPY Rhythmix.Application/Rhythmix.Application.csproj Rhythmix.Application/
-COPY Rhythmix.Domain/Rhythmix.Domain.csproj Rhythmix.Domain/
-COPY Rhythmix.Infrastructure/Rhythmix.Infrastructure.csproj Rhythmix.Infrastructure/
-COPY Rhythmix.Application.Tests/Rhythmix.Application.Tests.csproj Rhythmix.Application.Tests/ 
+COPY TuneVault.sln ./
+COPY TuneVault.API/TuneVault.API.csproj TuneVault.API/
+COPY TuneVault.Application/TuneVault.Application.csproj TuneVault.Application/
+COPY TuneVault.Domain/TuneVault.Domain.csproj TuneVault.Domain/
+COPY TuneVault.Infrastructure/TuneVault.Infrastructure.csproj TuneVault.Infrastructure/
+COPY TuneVault.Application.Tests/TuneVault.Application.Tests.csproj TuneVault.Application.Tests/ 
 # Restore
-RUN dotnet restore "Rhythmix.sln"
+RUN dotnet restore "TuneVault.sln"
 
 # Copy the rest of the source code
 COPY . .
 
 # Publish
-RUN dotnet publish "Rhythmix.API/Rhythmix.API.csproj" -c Release -o /app/publish
+RUN dotnet publish "TuneVault.API/TuneVault.API.csproj" -c Release -o /app/publish
 
 # Runtime stage
 FROM mcr.microsoft.com/dotnet/aspnet:10.0 AS runtime
@@ -31,4 +31,4 @@ ENV ASPNETCORE_URLS=http://+:8080
 
 EXPOSE 8080
 
-ENTRYPOINT ["dotnet", "Rhythmix.API.dll"]
+ENTRYPOINT ["dotnet", "TuneVault.API.dll"]

@@ -195,7 +195,7 @@ const UpdatePlaylistModal: React.FC<UpdatePlaylistModalProps> = ({
                   value={description}
                   onChange={(e) => setDescription(e.target.value)}
                   rows={3}
-                  className="w-full bg-zinc-800 text-white text-sm p-2.5 rounded focus:outline-none border border-transparent focus:border-zinc-700 transition-colors placeholder-zinc-500 resize-none h-[76px] custom-scrollbar"
+                  className="w-full bg-zinc-800 text-white text-sm p-2.5 rounded focus:outline-none border border-transparent focus:border-zinc-700 transition-colors placeholder-zinc-500 resize-none h-19 custom-scrollbar"
                 />
               </div>
             </div>
@@ -229,7 +229,7 @@ const UpdatePlaylistModal: React.FC<UpdatePlaylistModalProps> = ({
                 onChange={(e) => setIsPublic(e.target.checked)}
                 className="sr-only peer"
               />
-              <div className="w-9 h-5 bg-zinc-700 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-zinc-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-green-500"></div>
+              <div className="w-9 h-5 bg-zinc-700 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-0.5 after:bg-white after:border-zinc-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-green-500"></div>
             </label>
           </div>
 

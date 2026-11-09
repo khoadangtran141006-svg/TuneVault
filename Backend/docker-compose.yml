@@ -3,14 +3,14 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: rhythmix_api
+    container_name: TuneVault_api
     ports:
       - "8080:8080"
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_URLS=http://+:8080
       # Override connection string from appsettings.json
-      - ConnectionStrings__DefaultConnection=Server=rhythmixdb.cwxwqoskaiay.us-east-1.rds.amazonaws.com,1433;Database=RhythmixDb;User Id=admin;Password=root1234;TrustServerCertificate=True;MultipleActiveResultSets=true
+      - ConnectionStrings__DefaultConnection=Server=TuneVaultdb.cwxwqoskaiay.us-east-1.rds.amazonaws.com,1433;Database=TuneVaultDb;User Id=admin;Password=root1234;TrustServerCertificate=True;MultipleActiveResultSets=true
       - OpenRouter__ApiKey=${OPENROUTER_API_KEY} 
     volumes:
       - ./uploads:/app/wwwroot/uploads

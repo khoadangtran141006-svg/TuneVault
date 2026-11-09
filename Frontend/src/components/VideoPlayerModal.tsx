@@ -289,7 +289,7 @@ useEffect(() => {
               className="absolute inset-0 size-full object-cover opacity-15 blur-3xl scale-125"
             />
 
-            <div className="relative aspect-square w-full max-w-[360px] md:max-w-[400px] rounded-xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.8)] border border-zinc-800">
+            <div className="relative aspect-square w-full max-w-90 md:max-w-100 rounded-xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.8)] border border-zinc-800">
               <img
                 src={safePosterUrl}
                 alt={title || "Poster"}
@@ -425,7 +425,7 @@ useEffect(() => {
       />
 
       {showQueueToast && (
-        <div className="fixed bottom-28 left-1/2 z-[70] -translate-x-1/2 rounded-full bg-white px-4 py-2 text-sm font-semibold text-black shadow-lg animate-[fadeIn_0.15s_ease-out]">
+        <div className="fixed bottom-28 left-1/2 z-70 -translate-x-1/2 rounded-full bg-white px-4 py-2 text-sm font-semibold text-black shadow-lg animate-[fadeIn_0.15s_ease-out]">
           Đã thêm vào Current Queue
         </div>
       )}

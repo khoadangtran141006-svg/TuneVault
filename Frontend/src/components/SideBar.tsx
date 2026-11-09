@@ -40,7 +40,7 @@ const SideBar = ({ onOpenAuth }: { onOpenAuth: () => void }) => {
           <div className="flex size-8 items-center justify-center rounded-full bg-green-500 text-black">
             <Library className="size-4" />
           </div>
-          <span className="text-lg font-bold tracking-tight text-slate-950 dark:text-white">Rhythmix</span>
+          <span className="text-lg font-bold tracking-tight text-slate-950 dark:text-white">TuneVault</span>
         </div>
 
         <nav className="flex flex-col gap-1">
@@ -64,7 +64,7 @@ const SideBar = ({ onOpenAuth }: { onOpenAuth: () => void }) => {
 
                 {/* Unread notification badge */}
                 {label === "Notifications" && unreadCount > 0 && (
-                  <span className="flex items-center justify-center min-w-[20px] h-5 px-1.5 rounded-full bg-green-500 text-black text-xs font-bold">
+                  <span className="flex items-center justify-center min-w-5 h-5 px-1.5 rounded-full bg-green-500 text-black text-xs font-bold">
                     {unreadCount > 99 ? "99+" : unreadCount}
                   </span>
                 )}

@@ -13,13 +13,13 @@ VALUES
 (
     '11111111-1111-1111-1111-111111111111',
     'Jane',
-    'jane@rhythmix.com',
+    'jane@TuneVault.com',
     'Jane123!'
 ),
 (
     '22222222-2222-2222-2222-222222222222',
     'John',
-    'john@rhythmix.com',
+    'john@TuneVault.com',
     'John123!'
 );
 

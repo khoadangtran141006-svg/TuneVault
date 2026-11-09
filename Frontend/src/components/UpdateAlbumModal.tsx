@@ -175,7 +175,7 @@ const UpdateAlbumModal: React.FC<UpdateAlbumModalProps> = ({
                   value={description}
                   onChange={(e) => setDescription(e.target.value)}
                   rows={3}
-                  className="w-full bg-zinc-800 text-white text-sm p-2.5 rounded focus:outline-none border border-transparent focus:border-zinc-700 transition-colors placeholder-zinc-500 resize-none h-[76px] custom-scrollbar"
+                  className="w-full bg-zinc-800 text-white text-sm p-2.5 rounded focus:outline-none border border-transparent focus:border-zinc-700 transition-colors placeholder-zinc-500 resize-none h-19 custom-scrollbar"
                 />
               </div>
             </div>

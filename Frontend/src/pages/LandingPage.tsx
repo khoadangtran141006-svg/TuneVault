@@ -5,7 +5,7 @@ const LandingPage = () => {
     const navigate = useNavigate();
 
     return (
-        <div className="relative flex min-h-screen items-center justify-center overflow-hidden bg-gradient-to-br from-zinc-950 via-zinc-900 to-black px-6 text-white">
+        <div className="relative flex min-h-screen items-center justify-center overflow-hidden bg-linear-to-br from-zinc-950 via-zinc-900 to-black px-6 text-white">
             {/* Background decoration */}
             <div className="absolute inset-0 opacity-20">
                 <div className="absolute left-10 top-10 h-72 w-24 rotate-45 bg-zinc-700" />
@@ -16,7 +16,7 @@ const LandingPage = () => {
             <div className="relative z-10 grid w-full max-w-7xl items-center gap-16 lg:grid-cols-[420px_1fr]">
                 {/* Ảnh bên trái */}
                 <div className="hidden justify-center lg:flex">
-                    <div className="relative h-[560px] w-[360px] overflow-hidden rounded-3xl bg-zinc-900 shadow-2xl">
+                    <div className="relative h-140 w-90 overflow-hidden rounded-3xl bg-zinc-900 shadow-2xl">
                         <img
                             src="/landing-cover.png"
                             alt="Music cover"
@@ -30,7 +30,7 @@ const LandingPage = () => {
                         <div className="flex size-12 items-center justify-center rounded-full bg-green-500 text-black">
                             <Music2 size={26} />
                         </div>
-                        <h1 className="text-3xl font-bold">Rhythmix</h1>
+                        <h1 className="text-3xl font-bold">TuneVault</h1>
                     </div>
 
                     <h2 className="mb-6 text-4xl font-black leading-tight md:text-6xl">
@@ -39,7 +39,7 @@ const LandingPage = () => {
 
                     <p className="mb-10 max-w-xl text-sm leading-6 text-zinc-400 md:text-base">
                         Nghe nhạc, tạo playlist, lưu bài hát yêu thích và chia sẻ âm nhạc với
-                        bạn bè ngay trong Rhythmix.
+                        bạn bè ngay trong TuneVault.
                     </p>
 
                     <div className="mb-8 flex w-72 items-center gap-4 text-xs uppercase tracking-[0.25em] text-zinc-500">
@@ -57,7 +57,7 @@ const LandingPage = () => {
                     </button>
 
                     <p className="mb-8 text-xs font-bold uppercase tracking-[0.25em] text-zinc-500">
-                        New to Rhythmix?
+                        New to TuneVault?
                     </p>
 
                     <button

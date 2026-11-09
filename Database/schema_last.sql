@@ -1,19 +1,19 @@
 -- ============================================
--- SCRIPT TẠO DATABASE RHYTHMIX CHO RDS
+-- SCRIPT TẠO DATABASE TuneVault CHO RDS
 -- ============================================
 
 -- 1. Tạo database (nếu chưa tồn tại)
 USE master;
 GO
 
-IF NOT EXISTS (SELECT name FROM sys.databases WHERE name = 'RhythmixDb')
+IF NOT EXISTS (SELECT name FROM sys.databases WHERE name = 'TuneVaultDb')
 BEGIN
-    CREATE DATABASE RhythmixDb;
+    CREATE DATABASE TuneVaultDb;
 END
 GO
 
 -- 2. Chuyển sang database mới
-USE RhythmixDb;
+USE TuneVaultDb;
 GO
 
 -- ============================================

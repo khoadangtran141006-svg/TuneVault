@@ -126,7 +126,7 @@ const AddSongModal: React.FC<AddSongModalProps> = ({
 
                     {isAlreadyAdded ? (
                       <div className="p-1 text-green-500" title="Đã có trong playlist">
-                        <Check size={22} className="stroke-[3]" /> 
+                        <Check size={22} className="stroke-3" /> 
                       </div>
                     ) : (
                       <button

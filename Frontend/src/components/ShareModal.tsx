@@ -82,7 +82,7 @@ const ShareModal = ({ isOpen, onClose, itemToShare, onShareSuccess }: ShareModal
   };
 
   return createPortal(
-    <div className="fixed inset-0 z-[100] flex min-h-[100dvh] items-center justify-center overflow-y-auto bg-black/70 p-3 backdrop-blur-sm sm:p-4">
+    <div className="fixed inset-0 z-100 flex min-h-dvh items-center justify-center overflow-y-auto bg-black/70 p-3 backdrop-blur-sm sm:p-4">
       <div className="my-auto w-full max-w-sm space-y-4 rounded-xl border border-zinc-800 bg-zinc-900 p-4 shadow-2xl sm:p-5">
         <div className="flex items-center justify-between border-b border-zinc-800 pb-2">
           <div>
@@ -91,7 +91,7 @@ const ShareModal = ({ isOpen, onClose, itemToShare, onShareSuccess }: ShareModal
               {itemToShare.type === "video" && "Chia sẻ video"}
               {itemToShare.type === "playlist" && "Chia sẻ playlist"}
             </h3>
-            <p className="mt-0.5 max-w-[250px] truncate text-xs text-zinc-400">
+            <p className="mt-0.5 max-w-62.5 truncate text-xs text-zinc-400">
               Đang chia sẻ: {itemToShare.title}
             </p>
           </div>

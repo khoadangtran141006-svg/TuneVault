@@ -1,6 +1,6 @@
-"""# HƯỚNG DẪN SỬ DỤNG POSTMAN ĐỂ TEST RHYTHMIX API
+"""# HƯỚNG DẪN SỬ DỤNG POSTMAN ĐỂ TEST TuneVault API
 > **Thay thế cho Swagger UI trên .NET 10 (Native OpenAPI)**
-> Hướng dẫn dành cho các thành viên trong nhóm phát triển dự án Rhythmix.
+> Hướng dẫn dành cho các thành viên trong nhóm phát triển dự án TuneVault.
 
 Do dự án dùng **.NET 10** và chuyển sang sử dụng **Native OpenAPI** (`Microsoft.OpenApi` v2.x) thay cho thư viện Swashbuckle Swagger cũ, hệ thống sẽ sinh ra đặc tả API thô tại `/openapi/v1.json`. Tức là Swagger không sử dụng ổn định trên .NET10.
 
@@ -19,7 +19,7 @@ Vì chúng ta đang chạy API ở môi trường Localhost với chứng chỉ 
 ---
 
 ## BƯỚC 2: IMPORT ĐẶC TẢ API VÀO POSTMAN
-1. Bấm **F5** (hoặc chạy lệnh `dotnet run`) để khởi động dự án `Rhythmix.API`.
+1. Bấm **F5** (hoặc chạy lệnh `dotnet run`) để khởi động dự án `TuneVault.API`.
 2. Xác định cổng Port và giao thức đang chạy (Ví dụ: `http://localhost:5269`).
 3. Truy cập đường link đặc tả API thô trên trình duyệt:  
    `http://localhost:5269/openapi/v1.json` *(Thay đúng Port thực tế của bạn)*.
@@ -27,14 +27,14 @@ Vì chúng ta đang chạy API ở môi trường Localhost với chứng chỉ 
    * Bấm nút **Import** ở góc trên bên trái (hoặc nhấn `Ctrl + O`).
    * **Cách A (Nhanh):** Dán trực tiếp đường link `v1.json` ở trên vào ô nhập dữ liệu của Postman.
    * **Cách B (Ổn định nhất):** Nếu link localhost bị lỗi, hãy `Ctrl + A` ➔ `Ctrl + C` toàn bộ nội dung chữ hiển thị trên trình duyệt, sau đó dán thẳng văn bản thô (Raw Text) vào ô Import của Postman.
-5. Nhấn **Import**. Lúc này, một thư mục (Collection) tên là **Rhythmix.API** sẽ xuất hiện ở cột bên trái.
+5. Nhấn **Import**. Lúc này, một thư mục (Collection) tên là **TuneVault.API** sẽ xuất hiện ở cột bên trái.
 
 ---
 
 ## BƯỚC 3: CẤU HÌNH BIẾN MÔI TRƯỜNG TOÀN CỤC (`{{baseUrl}}`)
 Để không phải sửa thủ công số Port ở từng API con mỗi khi .NET đổi cổng chạy, chúng ta sẽ đưa số Port về một biến dùng chung.
 
-1. Nhấp chuột vào **tên thư mục gốc (Rhythmix.API)** ở cột bên trái.
+1. Nhấp chuột vào **tên thư mục gốc (TuneVault.API)** ở cột bên trái.
 2. Chọn tab **Variables** ở màn hình chính giữa.
 3. Tại dòng có tên biến là `baseUrl`, di chuyển sang cột **Current Value**, điền địa chỉ gốc đang chạy dưới máy bạn.  
    * *Ví dụ:* `http://localhost:5269`

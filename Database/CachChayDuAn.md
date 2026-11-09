@@ -6,35 +6,35 @@
 - SQL Server LocalDB hoặc SQL Server tương thích
 
 ## 2. Database hiện tại
-Hiện tại backend đang dùng connection string trong `Backend/Rhythmix.API/appsettings.json`:
+Hiện tại backend đang dùng connection string trong `Backend/TuneVault.API/appsettings.json`:
 
 ```json
 "ConnectionStrings": {
-  "DefaultConnection": "localhost\\SQLEXPRESS02;Database=RhythmixDb;Trusted_Connection=True;MultipleActiveResultSets=true"
+  "DefaultConnection": "localhost\\SQLEXPRESS02;Database=TuneVaultDb;Trusted_Connection=True;MultipleActiveResultSets=true"
 }
 ```
 
-Vậy dự án mặc định dùng SQL Server và database tên `RhythmixDb`.
+Vậy dự án mặc định dùng SQL Server và database tên `TuneVaultDb`.
 
-Nếu muốn đổi database, hãy sửa lại connection string trong `Backend/Rhythmix.API/appsettings.json`.
+Nếu muốn đổi database, hãy sửa lại connection string trong `Backend/TuneVault.API/appsettings.json`.
 
 ## 3. Chạy backend
 1. Mở terminal ở thư mục gốc của dự án:
 2. Chạy restore và build solution:
    ```powershell
-   dotnet restore Backend\Rhythmix.sln
-   dotnet build Backend\Rhythmix.sln
+   dotnet restore Backend\TuneVault.sln
+   dotnet build Backend\TuneVault.sln
    ```
 3. Chạy API:
   cd tới thư mục Backend
-  rồi cd tới thư mục Rhythmix.API
+  rồi cd tới thư mục TuneVault.API
   rồi chạy
    ```powershell
    dotnet run
    ```
    hoặc đứng ở thư mục ngoài Backend và chạy
    ```powershell
-   dotnet run --project Backend\Rhythmix.API\Rhythmix.API.csproj
+   dotnet run --project Backend\TuneVault.API\TuneVault.API.csproj
    ```
 
 Sau khi chạy, API sẽ khởi động và hiển thị URL (thường là `https://localhost:5001` hoặc `http://localhost:5000`).
@@ -70,10 +70,10 @@ Frontend sẽ chạy mặc định trên `http://localhost:5173`.
   ```
 - Chạy lại backend nếu thay đổi code:
   ```powershell
-  dotnet run --project Backend\Rhythmix.API\Rhythmix.API.csproj
+  dotnet run --project Backend\TuneVault.API\TuneVault.API.csproj
   ```
 
 ## 7. Lưu ý
-- Nếu chưa có database `RhythmixDb`, LocalDB sẽ tạo khi bạn kết nối và chạy các truy vấn.
+- Nếu chưa có database `TuneVaultDb`, LocalDB sẽ tạo khi bạn kết nối và chạy các truy vấn.
 - Nếu muốn làm với SQL Server đầy đủ, sửa `DefaultConnection` sang instance của bạn.
 - Backend sử dụng Dapper, các bảng cần tạo bằng script SQL trước khi chạy chức năng auth/profile nếu chưa có schema.

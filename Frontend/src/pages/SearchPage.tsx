@@ -34,7 +34,7 @@ const defaultBrowseCategories = [
   },
   {
     label: "Indie",
-    subtitle: "Rhythmix playlist",
+    subtitle: "TuneVault playlist",
     icon: Headphones,
     gradient: "from-violet-500 via-indigo-600 to-slate-950",
     accent: "bg-violet-400",
@@ -345,7 +345,7 @@ const SearchPage = () => {
     <div className="space-y-8 select-none">
       <div>
         <h1 className="text-balance text-3xl font-bold tracking-tight text-white">Search</h1>
-        <p className="mt-1 text-pretty text-sm text-zinc-400">Find songs and genre mixes uploaded to Rhythmix.</p>
+        <p className="mt-1 text-pretty text-sm text-zinc-400">Find songs and genre mixes uploaded to TuneVault.</p>
       </div>
 
       <section>
@@ -706,7 +706,7 @@ const SearchPage = () => {
                   Browse genres
                 </h2>
                 <p className="mt-1 text-sm text-zinc-400">
-                  Pick a genre and start exploring Rhythmix.
+                  Pick a genre and start exploring TuneVault.
                 </p>
               </div>
             </div>
@@ -724,12 +724,12 @@ const SearchPage = () => {
                   >
                     <div className="relative aspect-square overflow-hidden rounded-lg bg-zinc-800">
                       <div
-                        className={`absolute inset-0 bg-gradient-to-br ${cat.gradient} transition-transform duration-500 group-hover:scale-110`}
+                        className={`absolute inset-0 bg-linear-to-br ${cat.gradient} transition-transform duration-500 group-hover:scale-110`}
                       />
 
                       <div className="absolute inset-0 opacity-25">
-                        <div className="absolute -right-8 -top-8 size-28 rounded-full border-[18px] border-white/40" />
-                        <div className="absolute right-8 top-8 size-14 rotate-45 rounded-xl border-[10px] border-white/30" />
+                        <div className="absolute -right-8 -top-8 size-28 rounded-full border-18 border-white/40" />
+                        <div className="absolute right-8 top-8 size-14 rotate-45 rounded-xl border-10 border-white/30" />
                         <div className="absolute bottom-5 left-5 h-16 w-2 rotate-45 rounded-full bg-white/30" />
                         <div className="absolute bottom-9 left-10 h-10 w-2 rotate-45 rounded-full bg-white/20" />
                       </div>
